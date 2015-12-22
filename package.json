@@ -1,6 +1,6 @@
 {
   "name": "phantomnet-search",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "AngularJS filter that performs OR search operation",
   "repository": {
     "type": "git",

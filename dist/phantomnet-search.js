@@ -10,7 +10,7 @@
 
     var filters = angular.module("pnSearchFilter", []);
 
-    filters.filter("searchFilter", function () {
+    filters.filter("search", function () {
         return function (items, props) {
             var out = [];
 
