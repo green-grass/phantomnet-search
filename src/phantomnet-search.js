@@ -6,6 +6,8 @@
  */
 (function () {
 
+    'use strict';
+
     var filters = angular.module("pnSearchFilter", []);
 
     filters.filter("searchFilter", function () {
