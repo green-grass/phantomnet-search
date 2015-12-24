@@ -8,9 +8,9 @@
 
     'use strict';
 
-    var filters = angular.module("pnSearchFilter", []);
+    var filters = angular.module('pnSearchFilter', []);
 
-    filters.filter("search", function () {
+    filters.filter('search', function () {
         return function (items, props) {
             var out = [];
 
