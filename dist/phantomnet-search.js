@@ -18,13 +18,25 @@
                 items.forEach(function (item) {
                     var itemMatches = false;
 
-                    var keys = Object.keys(props);
-                    for (var i = 0; i < keys.length; i++) {
-                        var prop = keys[i];
-                        var text = props[prop].toLowerCase();
-                        if (item[prop] && (item[prop].toString().toLowerCase().indexOf(text) !== -1)) {
-                            itemMatches = true;
-                            break;
+                    if (typeof props === 'string') {
+                        var text = props.toLowerCase();
+                        var keys = Object.keys(item);
+                        for (var i = 0; i < keys.length; i++) {
+                            var prop = keys[i];
+                            if (item[prop] && (item[prop].toString().toLowerCase().indexOf(text) !== -1)) {
+                                itemMatches = true;
+                                break;
+                            }
+                        }
+                    } else {
+                        var keys = Object.keys(props);
+                        for (var i = 0; i < keys.length; i++) {
+                            var prop = keys[i];
+                            var text = props[prop].toLowerCase();
+                            if (item[prop] && (item[prop].toString().toLowerCase().indexOf(text) !== -1)) {
+                                itemMatches = true;
+                                break;
+                            }
                         }
                     }
 
