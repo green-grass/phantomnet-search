@@ -1,6 +1,6 @@
 {
   "name": "phantomnet-search",
-  "version": "1.0.0-beta6",
+  "version": "1.0.0-beta7",
   "description": "AngularJS filter that performs OR search operation",
   "main": "./dist/phantomnet-search.js",
   "authors": [
@@ -22,6 +22,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.9"
+    "angular": "~1.5.0"
   }
 }
